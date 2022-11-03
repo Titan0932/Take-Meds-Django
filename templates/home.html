@@ -1,0 +1,23 @@
+
+   {% extends 'base.html' %}
+   {% load static %}
+
+   {% block title %} Home   {% endblock %}
+
+   {% block css %}<link rel='stylesheet' type='text/css' href="{% static '/css/home.css' %}">{% endblock %}
+
+   {% block main-content %}
+   
+      <br> <h1 id='welcome'> Here are the updates <i> <b> {{user}}! </b></i> </h1>
+      <div class="updates-container">  
+      {% if updates %}
+          <p class='updates'> {{updates.as_p}} </p>
+      {% else %}
+         <p class='updates'>  All clear, no updates mate!!!</p>
+      {% endif %}
+
+   </div>  
+
+   {% endblock %}
+
+

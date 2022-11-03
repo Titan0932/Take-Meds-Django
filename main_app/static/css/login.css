@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+*,html{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --header-height:6rem;
+
+    --font-semi:600;
+    --body-font: 'Oswald', sans-serif;
+    --big-font-size:2.8rem;
+    --h2-font-size:2.1rem;
+    --h3-font-size:1.7rem;
+    --normal-font-size:1.5rem;
+    --proj-header-size:1.5rem;
+    --proj-subtitle-size:0.7rem;
+
+    --mb-1:0.5rem;
+    --mb-2:1rem;
+    --mb-3:1.5rem;
+    --mb-4:2rem;
+    --mb-5:2.5rem;
+    --mb-6:3rem;
+    --mb-7:3.5rem;
+    --mb-8:4rem;
+
+    --z-back:-10;
+    --z-normal:1;
+    --z-tooltip:10;
+    --z-fixed:100;
+
+    --primary-color-dark:#0A2629;
+    /* --primary-color-light:#285E6F; */
+    --primary-color-light:#53594f;
+    /* --secondary-color: #FF3F8A;
+    --tertiary-color: #D928BE; */
+    --highlight-color: #fc757e;
+    --background-color: #C1D4D6;
+
+    --p-color: ivory;
+}
+
+/* ----------------------------------------------------------- */
+
+body{
+    background-color: var(--primary-color-dark);
+    font-family: var(--body-font);
+    filter: blur(50%);
+    color: var(--p-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* .scroll-down:hover
+.span-highlight1, .scroll-down:hover .span-highlight2, .scroll-down:hover .span-highlight3{
+    border:4px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+}
+
+.span-highlight1{
+    display: inline-block; height: 50px; border:4px solid var(--p-color);
+}
+.span-highlight2{
+    display: inline-block; height: 37px; border:4px solid var(--p-color);transform:rotate(-45deg);
+}
+
+.span-highlight3{
+    display: inline-block; height: 37px; border:4px solid var(--p-color);transform:rotate(45deg);
+}
+ */
+
+.scroll-down{
+    font-size: 50px;
+    color:ivory;
+}
+.scroll-down:hover{
+    color: var(--highlight-color);
+}
+/* -------------------------------------------------------------------------------------------------------------*/
+
+.login-nav{
+   
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: 2rem 2rem 2rem 2rem;
+    top:0;
+    border-radius: 0.4rem;
+    height: auto;
+    color:white;
+}
+
+ul{
+    list-style: none;
+display: inline-flex;
+}
+
+.nav-items{
+    padding: 0 1rem; 
+    color:ivory;
+    cursor: pointer;
+    font-size: auto;  
+}
+
+.nav-items:hover{
+    color:var(--highlight-color)
+}
+
+.login{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    
+    width:100%;
+    height: 100vh;
+}
+
+
+
+.login-inputs, .login-new {
+    background-color: var(--primary-color-light);
+    border-radius: 1rem;
+}
+
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-new{
+    padding:1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login-inputs{
+    padding: 2rem 2rem 2rem 2rem;
+    height: auto;
+}
+
+
+.login-new{
+    margin-top: 1rem; 
+    padding: 1.5rem 2rem;
+}
+
+.login-inputs input{
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#login-submit-btn{
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    background-color: var(--primary-color-dark);
+    border-radius: 0.4rem;
+    border: none;
+    color: var(--p-color);
+    font-family: var(--body-font);
+}
+
+#login-submit-btn:hover{
+    background-color: var(--highlight-color);
+    transition: 0.4s;
+
+}
+
+.highlight{
+    text-decoration: none;
+    color:white
+
+}
+
+
+.highlight:hover{
+    color:var(--highlight-color);
+    cursor: pointer;
+}
+
+#forgot-pw:hover{
+    color: var(--highlight-color);
+}
+
+#forgot-password{
+    text-align: right;   
+    color:white;
+    text-decoration: underline;
+}
+
+#forgot-password:hover{
+    color: var(--highlight-color);
+}
+
+
+#new-signup{
+    color: var(--highlight-color);
+}
+
+.span-highlight:hover{
+    border:4px solid var(--highlight-color);
+}
+
+
+.app-login-desc{
+    background-color: var(--primary-color-light);
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: ivory;
+}
+
+
+
+.app-login-desc h1{
+    font-size: 7vw;
+    font-family: 'Lobster', cursive;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}   
+#takemeds-desc{
+   
+    text-align: center;
+    width: 60%;
+    font-size: 4vw;
+}
+#login-page-image{
+    width: 30%;
+    height: auto;
+    border-radius: 15%;   
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+#signup:hover{
+    color: var(--highlight-color);
+}
+#signup{
+    color: var(--p-color);
+    text-decoration: underline;
+}
+@media screen and (min-width: 640px){
+
+    .login-nav{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        padding: 2rem 2rem 2rem 2rem;
+        top:0;
+        border-radius: 0.4rem;
+        height: auto;
+        color: ivory;
+    
+    }
+
+
+    .section-login{
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+   
+    .login-inputs input{
+        width: 18vw;
+    }
+    .login-inputs, .login-new {
+        width: 20vw;
+    }
+    .app-login-desc h1{
+        font-size: 4.5vw;
+        font-family: 'Lobster', cursive;
+    }
+     
+    #takemeds-desc{
+        text-align: center;
+        width: 60%;
+        font-size: 1.9vw;
+    }
+    #login-page-image{
+        width: 30%;
+        height: auto;
+        border-radius: 15%;   
+    }
+
+    
+}
+
+@media screen and (max-width: 539px){
+
+    .section-login{
+        display: block;
+    }
+
+.nav-items{
+        font-size:4vmax;   
+    }
+}
+

@@ -1,0 +1,54 @@
+:root{
+    --header-height:6rem;
+
+    --font-semi:600;
+    --body-font: 'Oswald', sans-serif;
+    --big-font-size:2.8rem;
+    --h2-font-size:2.1rem;
+    --h3-font-size:1.7rem;
+    --normal-font-size:1.5rem;
+    --proj-header-size:1.5rem;
+    --proj-subtitle-size:0.7rem;
+
+    --mb-1:0.5rem;
+    --mb-2:1rem;
+    --mb-3:1.5rem;
+    --mb-4:2rem;
+    --mb-5:2.5rem;
+    --mb-6:3rem;
+    --mb-7:3.5rem;
+    --mb-8:4rem;
+
+    --z-back:-10;
+    --z-normal:1;
+    --z-tooltip:10;
+    --z-fixed:100;
+
+    --primary-color-dark:#0A2629;
+    /* --primary-color-light:#285E6F; */
+    --primary-color-light:#53594f;
+    /* --secondary-color: #FF3F8A;
+    --tertiary-color: #D928BE; */
+    --highlight-color: #fc757e;
+    --background-color: #C1D4D6;
+
+    --p-color: ivory;
+}
+
+#welcome{
+    color:var(--highlight-color);
+    text-align: center;
+}
+
+.updates-container{
+    display: flex;
+    font-size: 3.5vmax;
+    justify-content: center;
+ 
+    background-color: var(--primary-color-light);
+    color: var(--p-color);
+    margin: 3rem 14vw;
+    min-height: 60vh;
+    border-radius: 0.5em;
+    padding:2rem;
+}
